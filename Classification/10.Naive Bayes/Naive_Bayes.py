@@ -43,7 +43,7 @@ X12m,X12s=np.mean(X1[:,1]),np.std(X1[:,1])
 
 
 
-#Formula-1.0 / (sigma * (2.0 * pi)**(1/2)) * exp(-1.0 * (x - mu)**2 / (2.0 * (sigma**2)))
+#Formula=1.0 / (sigma * (2.0 * pi)**(1/2)) * exp(-1.0 * (x - mu)**2 / (2.0 * (sigma**2)))
 def predict(X_test,X0p,X1p,X01m,X02m,X11m,X12m,X01s,X02s,X11s,X12s):
     pred=np.zeros(len(X_test))
     for i in range(len(X_test)):
